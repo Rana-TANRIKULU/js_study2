@@ -46,55 +46,107 @@
 
 //Primitive Types
 
-//String
-let firstname='cedo';
-console.log(typeof firstname);
+ //String
+// let firstname='cedo';
+// console.log(typeof firstname);
 
 //Number
 
-let age = 11;
-let money=100.5;
-console.log(typeof age);
-console.log(typeof money);
+// let age = 11;
+// let money=100.5;
+// console.log(typeof age);
+// console.log(typeof money);
 
 
-//Boolean
-let isActive =false;
+// //Boolean
+// let isActive =false;
 
 
-console.log(typeof isActive)
+// console.log(typeof isActive)
 
 
 //null
-let job=null;
+// let job=null;
 
-console.log(typeof job)
+// console.log(typeof job)
 
-//undefined
-let car;
-console.log(typeof car)
+// //undefined
+// let car;
+// console.log(typeof car)
 
-//Reference Types-Objects
+// //Reference Types-Objects
 
 
-//Array
-let names=['ali','can','ahmet' ];
+// //Array
+// let names=['ali','can','ahmet' ];
 
-console.log(typeof names);
+// console.log(typeof names);
 
-//object
+// //object
 
-let address= {
-    city:'aydın',
-    country:'turkey'
-}
+// let address= {
+//     city:'aydın',
+//     country:'turkey'
+// }
 
-console.log(typeof address);
+// console.log(typeof address);
 
-//Function
+// //Function
 
-var calculateAge= function(){
-    return 0;
-};
+// var calculateAge= function(){
+//     return 0;
+// };
 
-console.log(typeof calculateAge);
+// console.log(typeof calculateAge);
+
+
+
+//Ders 4:Tür dönüşümü
+
+// let num1=Number('5');
+// let num2=Number('10');
+// let total=num1+num2;
+
+// console.log(total);
+// console.log(typeof total);
+
+
+let val;
+
+//number to string
+val = String(10);
+
+//bool to string
+
+val=String(true);
+
+val= String(new Date());
+
+//array to string
+
+val =String([1,2,3,4]);
+
+//toString()
+
+val = (10).toString();
+val = (false).toString();
+
+//string to number
+
+val =Number('10');
+val=Number(true);
+val= Number(false);
+val= Number(null);
+val= Number('a');
+val= Number([1,2,3,4]);
+
+//parsInt
+//parseFloat
+
+val=parseInt('10');
+val=parseInt('10.5');
+val=parseFloat('10.5');
+
+console.log(val);
+console.log(typeof val);
+console.log(val.toFixed(2));
